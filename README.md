@@ -1,4 +1,4 @@
-# Lean 4 Project Template
+# Lean 4 GroupoidModel Template
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-lightblue.svg)](https://opensource.org/licenses/Apache-2.0)
 
@@ -40,12 +40,12 @@ The template repository is organized as follows (listing the main folders and fi
 - [`.vscode`](.vscode) contains Visual Studio Code configuration files
     - [`extensions.json`](.vscode/extensions.json) recommends VS Code extensions for the project.
     - [`settings.json`](.vscode/settings.json) defines the project-specific settings for VS Code.
-- [`Project`](Project) should contain the Lean code files.
-    - [`Mathlib`](Project/Mathlib) should contain `.lean` files with declarations missing from
+- [`GroupoidModel`](GroupoidModel) should contain the Lean code files.
+    - [`Mathlib`](GroupoidModel/Mathlib) should contain `.lean` files with declarations missing from
     existing Mathlib developments.
-    - [`ForMathlib`](Project/ForMathlib) should contain `.lean` files with new declarations to
+    - [`ForMathlib`](GroupoidModel/ForMathlib) should contain `.lean` files with new declarations to
     be upstreamed to Mathlib.
-    - [`Example.lean`](Project/Example.lean) is a sample Lean file.
+    - [`Example.lean`](GroupoidModel/Example.lean) is a sample Lean file.
 - [`scripts`](scripts) contains scripts to update Mathlib ensuring that the latest version is fetched and integrated into the development environment.
 - [`.gitignore`](.gitignore) specifies files and folders to be ignored by Git.
 and environment.
@@ -59,19 +59,19 @@ Lean projects.
 
 To tailor this template to your specific project, you need to:
 
-- [`lint.yml`](.github/workflows/lint.yml): Find and replace `Project` with your actual
+- [`lint.yml`](.github/workflows/lint.yml): Find and replace `GroupoidModel` with your actual
 project name.
-- [`Project`](Project): Rename the folder to match your actual project name.
-- [`Project/Example.lean`](Project/Example.lean): Remove it and replace it with your actual
+- [`GroupoidModel`](GroupoidModel): Rename the folder to match your actual project name.
+- [`GroupoidModel/Example.lean`](GroupoidModel/Example.lean): Remove it and replace it with your actual
 project code.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): Customise the guidelines for contributing to the project.
-- [`lakefile.lean`](lakefile.lean): Find and replace `Project` with your actual project name.
-- [`Project.lean`](Project.lean): Rename the main file and the imports
+- [`lakefile.lean`](lakefile.lean): Find and replace `GroupoidModel` with your actual project name.
+- [`GroupoidModel.lean`](GroupoidModel.lean): Rename the main file and the imports
 to match your actual project name.
 
 ## Blueprint
 
-### 0. Selected Real-World Collaborative Projects
+### 0. Selected Real-World Collaborative GroupoidModels
 
 - [Fermat's Last Theorem for Exponent 3](https://pitmonticone.github.io/FLT3/)
 - [Polynomial Freiman-Ruzsa Conjecture](https://github.com/teorth/pfr)

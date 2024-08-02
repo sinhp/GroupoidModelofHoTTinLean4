@@ -121,5 +121,5 @@
    "inputRev": "main",
    "inherited": false,
    "configFile": "lakefile.lean"}],
- "name": "Project",
+ "name": "GroupoidModel",
  "lakeDir": ".lake"}

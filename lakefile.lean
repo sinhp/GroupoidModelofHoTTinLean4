@@ -3,7 +3,7 @@ open Lake DSL
 
 /- Define the package configuration for the project.
 Includes options for Lean's pretty-printer and implicit argument settings. -/
-package «Project» where
+package «GroupoidModel» where
   leanOptions := #[
     ⟨`pp.unicode.fun, true⟩,      -- Pretty-print `fun a ↦ b`
     ⟨`autoImplicit, false⟩,       -- Disable auto-implicit arguments
@@ -17,7 +17,7 @@ require mathlib from git "https://github.com/leanprover-community/mathlib4.git"
 This can be customized with additional library configuration options.
 -/
 @[default_target]
-lean_lib «Project» where
+lean_lib «GroupoidModel» where
   -- Add any library configuration options here
 
 require checkdecls from git "https://github.com/PatrickMassot/checkdecls.git"
